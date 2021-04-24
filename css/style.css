@@ -1,0 +1,134 @@
+:root{
+  --Violet: hsl(257, 40%, 49%);
+  --Soft-Magenta: hsl(300, 69%, 71%);
+}
+
+body{
+  background-color: var(--Violet);
+  color: white;
+  margin: 30px;
+  padding:  10px 10px;
+  background-image: url(../assent/images/bg-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header{
+  margin: 0;
+  padding: 0;
+}
+
+.title{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  
+}
+
+.logo{
+  max-width: 40%;
+  margin-bottom: 50px;
+  
+}
+
+.banner{
+  max-width: 100%;
+  margin-bottom: 35px;
+}
+
+.article{
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.text{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  color: beige;
+  font-size: 0.98rem;
+  margin-bottom: 40px;
+}
+
+
+.button{
+  font-family: 'Open Sans', sans-serif;
+  color: var(--Violet);
+  background-color: white;
+  padding: 10px 80px;
+  text-decoration: none;
+  border-radius: 20px;
+  font-size: 1rem;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+  
+}
+
+
+.social{
+  padding-left: 0;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+}
+
+.social__item{
+  border: 1px solid #ffff;
+  margin: 0 5px;
+  border-radius: 50px;
+  padding: 5px;
+  text-align: center;
+  line-height: 25px;
+  width: 25px;
+  height: 25px;
+}
+
+@media screen and (min-width:768px) {
+  body{
+    background-image: url(../assent/images/bg-desktop.svg);
+    background-size: cover;
+    max-width: 1240px;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    min-height: 100vh;
+
+  }
+  .title{
+    font-size: 2.2rem;
+    max-width: 450px;
+    margin-top: 0;
+  }
+  .logo{
+    max-width: 45%;
+    margin-bottom: 75px;
+  }
+  .main{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 100px;
+  }
+  .article{
+    text-align: left;
+    max-width: 500px;
+    margin-left: 50px;
+    padding-bottom: 100px;
+  }
+  .footer{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 30px;
+  }
+
+  .button:hover{
+    background-color: var(--Soft-Magenta);
+    color: white;
+  }
+
+  .social__item:hover{
+    border: 1px solid var(--Soft-Magenta);
+    color: var(--Soft-Magenta);
+    
+  }
+ 
+}
